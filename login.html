@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>login</title>
+    <link rel="stylesheet" href="./js/lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/login.css">
+</head>
+
+<body>
+    <div class="csm_login">
+        <!-- 上面的盒子 -->
+        <div class="login_top">
+            <img src="./images/login_logo.png" alt="">
+        </div>
+        <div class="container clearfix">
+            <!-- left -->
+            <div class="login_left fl">
+                <img src="./images/login_road.png" alt="">
+            </div>
+            <!-- right -->
+            <div class="login_right fr">
+                <div class="login_tit">
+                    <h1>中铁物流飞豹专线开放平台</h1>
+                </div>
+                <!-- 提示框 -->
+                <div class="tips">
+                    <img src="./images/login_error.png" alt="">
+                    <p class="col-md-8 col-md-offset-2">
+                        用户名不正确
+                    </p>
+                </div>
+
+                <!-- 登录验证框 -->
+                <form class="form-horizontal">
+                    <div class="form-group">
+                        <div class="col-md-8 col-md-offset-2">
+                            <input type="text" class="form-control" id="username" name="username" placeholder="用户名">
+                            <img src="./images/login_user.png" alt="">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-8 col-md-offset-2">
+                            <input type="password" class="form-control" id="password" name="password" placeholder="密码">
+                            <img src="./images/login_lock.png" alt="">
+
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-8 col-md-offset-2">
+                            <input type="password" class="form-control" id="checkcode" name="checkcode" placeholder="验证码">
+                            <img src="./images/login_checkcode.png" alt="">
+                            <div class="sendBt">
+                                <img src="./images/login_base.png" alt="">
+                                <img class="phone_num" src="./images/login_code.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 登录按钮 -->
+                    <div class="form-group">
+                        <div class="col-md-8 col-md-offset-2">
+                            <button type="submit" class="btn btn-info btn-block loginBt" data-dismiss="alert">登录</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- 底部文字 -->
+        <div class="login_bot">
+            <p>http://ky.crlg.com/home/index</p>
+        </div>
+    </div>
+
+    <script src="./js/lib/require.js" data-main="./js/main"></script>
+
+</body>
+
+</html>
