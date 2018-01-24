@@ -4,15 +4,18 @@
     width: 100%;
     background-image:linear-gradient(to left, #54c8ff, #5c83fe);
     .login_top {
-        background-color: #fff;
-        padding-left:370px;
-        box-sizing: border-box;
+        background-color: #fff; 
         height: 90px;
-        padding-top: 15px;
-        img {
-            width: 100px;
+        .container{
+            position: relative;
+            img {
+                width: 100px;
+                position: absolute;
+                top: 15px;
+            }
         }
     }
+    
     .container {
         padding-top: 130px;
         padding-bottom: 140px;
@@ -44,17 +47,15 @@
                     z-index: 2;
                     display: none;
                 }
-                p { 
-                    height: 100%;                       
+                p {                                           
                     font-size: 13px;
                     position: absolute; 
                     text-indent: 25px;                   
                     left: 20px;
                     height: 30px;  
                     line-height: 30px; 
-                    border: 1px solid #55C1FF;
-                    background-color: #f2f7fd;                
-                    // border-radius: 5px; 
+                    border: 1px solid #FFB4A8;
+                    background-color: #FCE9EC; 
                     left: 11px;
                     display: none;  
                     margin-top: 10px;
@@ -131,3 +132,4 @@
         }
     }
 }
+

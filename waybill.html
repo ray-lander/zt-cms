@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>机构管理</title>
+    <link rel="stylesheet" href="./js/lib/layui/css/layui.css" media="all">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/waybill.css">
+</head>
+
+<body>
+    <div class="waybill">
+        <div class="bill_top clearfix">
+            <div class="fl">
+                <span>运单查询</span>
+                <i class="layui-icon">&#xe615;</i>
+            </div>
+            <div class="fr">
+                <span>更多筛选</span>
+                <i class="layui-icon">&#xe61a;</i>
+            </div>
+        </div>
+        <div class="bill_select">
+            <div class="layui-row mt-15">
+                <div class="layui-col-md3">
+                    <span class="mg-5">机构：</span>
+                    <input class="orgn" type="text" placeholder="机构名称/编号">
+                </div>
+                <div class="layui-col-md3">
+                    <span>是否虚拟：</span>
+                    <select>
+                        <option value="volvo">全部</option>
+                        <option value="saab">Saab</option>
+                        <option value="opel">Opel</option>
+                    </select>
+                </div>
+                <div class="layui-col-md3">
+                    <span class="mg-8">地区：</span>
+                    <select class="city">
+                        <option value="volvo">省份</option>
+                        <option value="saab">Saab</option>
+                        <option value="opel">Opel</option>
+                    </select>
+                    <select class="city">
+                        <option value="volvo">城市</option>
+                        <option value="saab">Saab</option>
+                        <option value="opel">Opel</option>
+                    </select>
+                    <select class="city">
+                        <option value="volvo">区域</option>
+                        <option value="saab">Saab</option>
+                        <option value="opel">Opel</option>
+                    </select>
+                </div>
+                <div class="layui-col-md3">
+
+                </div>
+
+            </div>
+            <div class="layui-row">
+                <div class="layui-col-md3">
+                    <span class="mg-5">类型：</span>
+                    <select class="type">
+                        <option value="volvo">全部</option>
+                        <option value="saab">Saab</option>
+                        <option value="opel">Opel</option>
+                    </select>
+                </div>
+                <div class="layui-col-md3">
+                    <span class="mg-8">状态：</span>
+                    <select>
+                        <option value="volvo">全部</option>
+                        <option value="saab">Saab</option>
+                        <option value="opel">Opel</option>
+                    </select>
+                </div>
+                <div class="layui-col-md3 clearfix">
+                    <span class="fl">创建时间：</span>                                        
+                    <input type="text" class="layui-input time_sel" id="time_start" placeholder="起止时间">
+                    <span class="fl">至</span>
+                    <input type="text" class="layui-input time_sel" id="time_end" placeholder="结束时间">                    
+                    
+                </div>
+                <div class="layui-col-md3 btn_box">
+                    <button>搜索</button>
+                    <i class="layui-icon select_btn1">&#xe615;</i>
+                    <button>清空</button>
+                    <i class="layui-icon select_btn2">&#xe640;</i>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="chioce_btn">
+            <button class="chioce_btn1">新增</button>
+            <i class="layui-icon chioce_btn1">&#xe608;</i>
+
+            <button class="chioce_btn2">查看</button>
+            <i class="layui-icon chioce_btn2">&#xe6af;</i>
+
+            <button class="chioce_btn3">编辑</button>
+            <i class="layui-icon chioce_btn3">&#xe6b2;</i>
+
+            <button class="chioce_btn4">停用</button>
+            <i class="layui-icon chioce_btn4">&#x1007;</i>
+
+            <button class="chioce_btn5">导出</button>
+            <i class="layui-icon chioce_btn5">&#xe601;</i>
+        </div>
+        <!-- list -->
+        <div class="waybill_list">
+            <table class="layui-table" id="list" lay-filter="test"></table>
+           
+        </div>
+        
+    </div>
+
+
+    <script src="./js/lib/require.js" data-main="./js/main"></script>
+</body>
+
+</html>

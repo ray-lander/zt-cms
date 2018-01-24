@@ -1,44 +1,43 @@
 
-
-  console.log(8888)
     require.config({
-        baseUrl: 'js/',
+        baseUrl: './js',
         paths: {          
           'bootstrap': './lib/bootstrap/js/bootstrap',
           'jquery': './lib/jquery/jquery.min' , 
-          'bootstrap-validator': './lib/bootstrap-validator/js/bootstrapValidator',          
-          'nprogress': './lib/nprogress/nprogress',          
-          'echarts': './lib/echarts/echarts.min',          
-          'rem' : './rem',
-          'login': './login'          
+          'jquery-validate': './lib/jquery-validation/jquery.validate.min',           
+          'layui': './lib/layui/layui',       
+          'login': './login',
+          'index': './index',
+          'waybill': './waybill'          
         },
         shim:{
           'bootstrap': {
             deps: ['jquery']
           },
-          'bootstrap-validator':{
-            deps:['jquery']
-          },          
-          'nprogress': {
-            deps:['jquery']
-          },
-          'echarts':{
-            deps:['jquery']
-          },
-          
-          'rem': {
+          'jquery-validate': {
             deps: ['jquery']
-          },
+          },     
+          
+          'layui': {
+            deps:['jquery']
+          }, 
+
           'login':{
+            deps:['jquery']
+          },
+          'index':{
+            deps:['jquery']
+          },
+          'waybill':{
             deps:['jquery']
           }
         }
       })
 
       require(
-        ['jquery','bootstrap','bootstrap-validator','nprogress','echarts','rem','login'],
-       function($, bootstrap, bootstrapValidator, nprogress, echarts, rem, login ) {
-        console.log(1111)
+        ['jquery','bootstrap','jquery-validate','layui','login','index','waybill'],
+       function($, bootstrap, jqueryValidate, layui, login, index, waybill ) {
+        
        })
      
       

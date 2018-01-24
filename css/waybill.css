@@ -256,129 +256,190 @@ a:active {
   text-decoration: none ;
   color: white;
 }
-.csm_login {
+.star {
+  color: #71bffd;
+  font-size: 15px;
+  font-weight: bold;
+}
+.mt-12 {
+  margin-bottom: 12px;
+}
+.mt-15 {
+  margin-bottom: 15px;
+}
+.waybill {
   width: 100%;
-  background-image: linear-gradient(to left, #54c8ff, #5c83fe);
 }
-.csm_login .login_top {
-  background-color: #fff;
-  height: 90px;
+.waybill .bill_top {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  padding-left: 30px;
+  padding-right: 70px;
+  box-sizing: border-box;
+  background-color: #e1f4fd;
 }
-.csm_login .login_top .container {
-  position: relative;
+.waybill .bill_top i {
+  color: #62b2fe;
+  font-size: 16px;
+  font-weight: bold;
 }
-.csm_login .login_top .container img {
-  width: 100px;
-  position: absolute;
-  top: 15px;
-}
-.csm_login .container {
-  padding-top: 130px;
-  padding-bottom: 140px;
+.waybill .bill_select {
+  width: 100%;
+  padding-top: 45px;
+  padding-bottom: 45px;
+  padding-left: 3%;
   box-sizing: border-box;
 }
-.csm_login .container .login_left {
-  width: 57%;
+.waybill .bill_select .layui-col-md3 {
+  width: 25%;
 }
-.csm_login .container .login_left img {
-  width: 646px;
+.waybill .bill_select span {
+  color: #333;
+  font-size: 14px;
 }
-.csm_login .container .login_right {
-  width: 43%;
+.waybill .bill_select span.mg-5 {
+  margin-right: 5%;
 }
-.csm_login .container .login_right .login_tit {
-  margin-bottom: 47px;
+.waybill .bill_select span.mg-8 {
+  margin-right: 8%;
 }
-.csm_login .container .login_right .login_tit h1 {
-  font-size: 38px;
-  color: #fff;
-  letter-spacing: 3px;
-  margin-left: 10px;
+.waybill .bill_select span.mg-9 {
+  margin-right: 9%;
 }
-.csm_login .container .login_right .tips {
-  position: relative;
-}
-.csm_login .container .login_right .tips img {
-  width: 25px;
-  position: absolute;
-  left: 100px;
-  top: 13px;
-  z-index: 2;
-  display: none;
-}
-.csm_login .container .login_right .tips p {
-  font-size: 13px;
-  position: absolute;
-  text-indent: 25px;
-  left: 20px;
-  height: 30px;
-  line-height: 30px;
-  border: 1px solid #FFB4A8;
-  background-color: #FCE9EC;
-  left: 11px;
-  display: none;
-  margin-top: 10px;
-  color: #555;
-}
-.csm_login .container .login_right form {
-  width: 526px;
-  height: 390px;
-  background-color: #f2f7fd;
-  padding-top: 48px;
-  padding-bottom: 48px;
-  box-sizing: border-box;
-  box-shadow: 0px 20px 100px 0px #489ad5;
-}
-.csm_login .container .login_right form input {
-  border: none;
-  text-indent: 55px;
-  margin-bottom: 11px;
-  height: 50px;
-  border-radius: 0;
-}
-.csm_login .container .login_right form .col-md-8 {
-  position: relative;
-}
-.csm_login .container .login_right form .col-md-8 img {
-  position: absolute;
-  width: 22px;
-  height: 22px;
-  left: 35px;
-  top: 15px;
-}
-.csm_login .container .login_right form .sendBt {
-  width: 87px;
-  height: 50px;
-  position: relative;
-}
-.csm_login .container .login_right form .sendBt img {
-  position: absolute;
-  width: 87px;
-  height: 50px;
-  left: 254px;
-  top: -61px;
-}
-.csm_login .container .login_right form .sendBt .phone_num {
-  position: absolute;
-  left: 260px;
-  top: -65px;
-}
-.csm_login .container .login_right form button {
-  background-color: #53c2f7;
-  border: none;
-  height: 50px;
-  border-radius: 0;
-  margin-top: -41px;
-  outline: none;
-}
-.csm_login .login_bot {
-  position: relative;
-  background-color: #fff;
-}
-.csm_login .login_bot p {
-  color: #b1dcff;
-  font-size: 20px;
-  opacity: 5.4;
+.waybill .bill_select input {
+  border: 1px solid #edeaec;
+  height: 25px;
+  border-radius: 1px;
+  color: #767676;
+  background-color: #f1fefc;
   text-align: center;
-  line-height: 135px;
+}
+.waybill .bill_select input.orgn {
+  width: 29%;
+}
+.waybill .bill_select select {
+  border: 1px solid #edeaec;
+  height: 25px;
+  border-radius: 1px;
+  color: #767676;
+  background-color: #f1fefc;
+  text-indent: 5px;
+}
+.waybill .bill_select select.city {
+  width: 20%;
+}
+.waybill .bill_select select.type {
+  width: 29%;
+}
+.waybill .bill_select select option {
+  text-align: center;
+}
+.waybill .bill_select .btn_box {
+  padding-left: 50px;
+  box-sizing: border-box;
+}
+.waybill .bill_select button {
+  width: 68px;
+  height: 30px;
+  background-color: #6bc4fd;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  text-align: left;
+  padding-left: 12px;
+  box-sizing: border-box;
+  position: relative;
+}
+.waybill .bill_select .select_btn1 {
+  position: absolute;
+  left: 94px;
+  top: 5px;
+  color: #fff;
+}
+.waybill .bill_select .select_btn2 {
+  position: absolute;
+  top: 4px;
+  left: 165px;
+  color: #fff;
+}
+.waybill .bill_select .time_sel {
+  width: 30%;
+  float: left;
+}
+.waybill .chioce_btn {
+  height: 45px;
+  background-color: #e4ecef;
+  padding: 5px 0;
+  position: relative;
+}
+.waybill .chioce_btn button {
+  height: 100%;
+  width: 90px;
+  text-align: left;
+  padding-left: 20px;
+  box-sizing: border-box;
+  border: none;
+  color: #fff;
+  font-size: 14px;
+}
+.waybill .chioce_btn .chioce_btn1 {
+  background-color: #6bc4ff;
+}
+.waybill .chioce_btn .chioce_btn2 {
+  background-color: #48b2f7;
+}
+.waybill .chioce_btn .chioce_btn3 {
+  background-color: #69c5ff;
+}
+.waybill .chioce_btn .chioce_btn4 {
+  background-color: #57abfe;
+}
+.waybill .chioce_btn .chioce_btn5 {
+  background-color: #6a9fe2;
+}
+.waybill .chioce_btn i {
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #fff;
+  font-size: 21px;
+}
+.waybill .chioce_btn .chioce_btn1 {
+  margin-left: 5px;
+  left: 58px;
+  top: 14px;
+}
+.waybill .chioce_btn .chioce_btn2 {
+  left: 152px;
+  top: 14px;
+}
+.waybill .chioce_btn .chioce_btn3 {
+  left: 246px;
+  top: 15px;
+}
+.waybill .chioce_btn .chioce_btn4 {
+  left: 338px;
+  top: 14px;
+}
+.waybill .chioce_btn .chioce_btn5 {
+  left: 434px;
+  top: 14px;
+}
+.waybill .waybill_list {
+  padding: 0;
+}
+.waybill .layui-table {
+  margin: 0;
+  padding: 0;
+}
+.waybill .layui-table thead tr {
+  background-color: #e0f5fd;
+}
+.waybill .layui-table-header {
+  background-color: #e0f5fd;
+}
+.waybill .layui-table,
+.waybill .layui-table-view {
+  margin: 0;
 }

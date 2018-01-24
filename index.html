@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>运单管理-首页</title>
+    <link rel="stylesheet" href="./js/lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <div class="lt_header clearfix">
+        <div class="logo_wrap fl">
+            <img src="./images/login_logo.png" alt="">
+        </div>
+        <div class="search_wrap fl">
+            <input type="search" placeholder="运单查询">
+            <span class="glyphicon glyphicon-search"></span>
+        </div>
+        <div class="message_wrap fl">
+            <a href="javascript:;">
+                <span class="glyphicon glyphicon-bell"></span>
+                <span class="mes">消息</span>
+            </a>
+        </div>
+        <div class="user_wrap fl">
+            <a href="javascript:;">
+                <span class="iconfont">&#xe632;</span>
+                <span class="user">管理员</span>
+            </a>
+        </div>
+
+    </div>
+    <!-- 侧边栏 -->
+    <div class="lt_aside">
+        <div class="nav">
+            <ul class="list">
+                <!-- 第一个li标签 -->
+                <li class="prev_list">
+                    <a href="javascript:;">
+                        <span class="iconfont">&#xe64f;</span>
+                        操作面板
+                    </a>
+                </li>
+                <!-- li标签菜单 -->
+                <li>
+                    <a href="javascript:;" class="clearfix">
+                        <span class="iconfont home">&#xe632;</span>
+                        客户管理
+                        <span class="iconfont up">&#xe639;</span>
+                        <span class="iconfont down">&#xe650;</span>
+                    </a>
+                    <ul class="child" style="display: none">
+                        <li>一级分类
+                            <ul class="child_next" style="display: none">
+                                <a href="#" data-id="1" data-name="cargo">
+                                    <li>货物托运单</li>
+                                </a>
+                                <a href="#" data-id="2" data-name="waybill">
+                                    <li>三级分类</li>
+                                </a>
+                                <a href="#" data-id="3">
+                                    <li>三级分类</li>
+                                </a>
+                            </ul>
+                        </li>
+                        <li>二级分类
+                            <ul class="child_next" style="display: none">
+                                <a href="#" data-id="4">
+                                    <li>呵呵呵呵</li>
+                                </a>
+                                <a href="#" data-id="5">
+                                    <li>咳咳分类</li>
+                                </a>
+                                <a href="#" data-id="6">
+                                    <li>2级分类</li>
+                                </a>
+
+                            </ul>
+                        </li>
+
+                    </ul>
+
+                </li>
+                <li>
+                    <a href="javascript:;" class="clearfix">
+                        <span class="iconfont home">&#xe7ca;</span>
+                        报价管理
+                        <span class="iconfont up">&#xe639;</span>
+                        <span class="iconfont down">&#xe650;</span>
+                    </a>
+                    <ul class="child" style="display: none">
+                        <li>一级分类
+                            <ul class="child_next" style="display: none">
+                                <a href="#">
+                                    <li>三级分类</li>
+                                </a>
+                                <a href="#">
+                                    <li>三级分类</li>
+                                </a>
+                                <a href="#">
+                                    <li>三级分类</li>
+                                </a>
+                            </ul>
+                        </li>
+                        <li>二级分类
+                            <ul class="child_next" style="display: none">
+                                <a href="#">
+                                    <li>三级分类</li>
+                                </a>
+                                <a href="#">
+                                    <li>三级分类</li>
+                                </a>
+                                <a href="#">
+                                    <li>三级分类</li>
+                                </a>
+
+                            </ul>
+                        </li>
+
+                    </ul>
+
+
+                </li>
+                <li>
+                    <a href="javascript:;" class="clearfix">
+                        <span class="iconfont home">&#xe619;</span>
+                        运营管理
+                        <span class="iconfont up">&#xe639;</span>
+                        <span class="iconfont down">&#xe650;</span>
+                    </a>
+
+                    <ul class="child" style="display: none">
+                        <li>一级分类
+                            <ul class="child_next" style="display: none">
+                                <a href="#">
+                                    <li>三级分类</li>
+                                </a>
+                                <a href="#">
+                                    <li>三级分类</li>
+                                </a>
+                                <a href="#">
+                                    <li>三级分类</li>
+                                </a>
+                            </ul>
+                        </li>
+                        <li>二级分类
+                            <ul class="child_next" style="display: none">
+                                <a href="#">
+                                    <li>三级分类</li>
+                                </a>
+                                <a href="#">
+                                    <li>三级分类</li>
+                                </a>
+                                <a href="#">
+                                    <li>三级分类</li>
+                                </a>
+
+                            </ul>
+                        </li>
+
+                    </ul>
+
+
+                </li>
+                <li>
+                    <a href="javascript:;" class="clearfix">
+                        <span class="iconfont home">&#xe632;</span>
+                        客户管理
+                        <span class="iconfont up">&#xe639;</span>
+                        <span class="iconfont down">&#xe650;</span>
+                    </a>
+                    <ul class="child" style="display: none">
+                        <li>一级分类
+                            <ul class="child_next" style="display: none">
+                                <a href="#">
+                                    <li>三级分类</li>
+                                </a>
+                                <a href="#">
+                                    <li>三级分类</li>
+                                </a>
+                                <a href="#">
+                                    <li>三级分类</li>
+                                </a>
+                            </ul>
+                        </li>
+                        <li>二级分类
+                            <ul class="child_next" style="display: none">
+                                <a href="#">
+                                    <li>呵呵呵呵</li>
+                                </a>
+                                <a href="#">
+                                    <li>咳咳分类</li>
+                                </a>
+                                <a href="#">
+                                    <li>2级分类</li>
+                                </a>
+
+                            </ul>
+                        </li>
+
+                    </ul>
+
+                </li>
+                <li>
+                    <a href="javascript:;" class="clearfix">
+                        <span class="iconfont home">&#xe7ca;</span>
+                        报价管理
+                        <span class="iconfont up">&#xe639;</span>
+                        <span class="iconfont down">&#xe650;</span>
+                    </a>
+                    <ul class="child" style="display: none">
+                        <li >一级分类
+                            <ul class="child_next" style="display: none">
+                                <a href="#">
+                                    <li>三级分类</li>
+                                </a>
+                                <a href="#">
+                                    <li>三级分类</li>
+                                </a>
+                                <a href="#">
+                                    <li>三级分类</li>
+                                </a>
+                            </ul>
+                        </li>
+                        <li>二级分类
+                            <ul class="child_next" style="display: none">
+                                <a href="#">
+                                    <li>三级分类</li>
+                                </a>
+                                <a href="#">
+                                    <li>三级分类</li>
+                                </a>
+                                <a href="#">
+                                    <li>三级分类</li>
+                                </a>
+
+                            </ul>
+                        </li>
+
+                    </ul>
+
+
+                </li>
+                <li>
+                    <a href="javascript:;" class="clearfix">
+                        <span class="iconfont home">&#xe619;</span>
+                        运营管理
+                        <span class="iconfont up">&#xe639;</span>
+                        <span class="iconfont down">&#xe650;</span>
+                    </a>
+
+                    <ul class="child" style="display: none">
+                        <li>一级分类
+                            <ul class="child_next" style="display: none">
+                                <a href="#">
+                                    <li>三级分类</li>
+                                </a>
+                                <a href="#">
+                                    <li>三级分类</li>
+                                </a>
+                                <a href="#">
+                                    <li>三级分类</li>
+                                </a>
+                            </ul>
+                        </li>
+                        <li>二级分类
+                            <ul class="child_next" style="display: none">
+                                <a href="#">
+                                    <li>三级分类</li>
+                                </a>
+                                <a href="#">
+                                    <li>三级分类</li>
+                                </a>
+                                <a href="#">
+                                    <li>三级分类</li>
+                                </a>
+
+                            </ul>
+                        </li>
+
+                    </ul>
+
+
+                </li>
+                <li>
+                    <a href="javascript:;" class="clearfix">
+                        <span class="iconfont home">&#xe632;</span>
+                        客户管理
+                        <span class="iconfont up">&#xe639;</span>
+                        <span class="iconfont down">&#xe650;</span>
+                    </a>
+                    <ul class="child" style="display: none">
+                        <li>一级分类
+                            <ul class="child_next" style="display: none">
+                                <a href="#">
+                                    <li>三级分类</li>
+                                </a>
+                                <a href="#">
+                                    <li>三级分类</li>
+                                </a>
+                                <a href="#">
+                                    <li>三级分类</li>
+                                </a>
+                            </ul>
+                        </li>
+                        <li>二级分类
+                            <ul class="child_next" style="display: none">
+                                <a href="#">
+                                    <li>呵呵呵呵</li>
+                                </a>
+                                <a href="#">
+                                    <li>咳咳分类</li>
+                                </a>
+                                <a href="#">
+                                    <li>2级分类</li>
+                                </a>
+
+                            </ul>
+                        </li>
+
+                    </ul>
+
+                </li>
+                <li>
+                    <a href="javascript:;" class="clearfix">
+                        <span class="iconfont home">&#xe7ca;</span>
+                        报价管理
+                        <span class="iconfont up">&#xe639;</span>
+                        <span class="iconfont down">&#xe650;</span>
+                    </a>
+                    <ul class="child" style="display: none">
+                        <li>一级分类
+                            <ul class="child_next" style="display: none">
+                                <a href="#">
+                                    <li>三级分类</li>
+                                </a>
+                                <a href="#">
+                                    <li>三级分类</li>
+                                </a>
+                                <a href="#">
+                                    <li>三级分类</li>
+                                </a>
+                            </ul>
+                        </li>
+                        <li>二级分类
+                            <ul class="child_next" style="display: none">
+                                <a href="#">
+                                    <li>三级分类</li>
+                                </a>
+                                <a href="#">
+                                    <li>三级分类</li>
+                                </a>
+                                <a href="#">
+                                    <li>三级分类</li>
+                                </a>
+
+                            </ul>
+                        </li>
+
+                    </ul>
+
+
+                </li>
+                <li>
+                    <a href="javascript:;" class="clearfix">
+                        <span class="iconfont home">&#xe619;</span>
+                        运营管理
+                        <span class="iconfont up">&#xe639;</span>
+                        <span class="iconfont down">&#xe650;</span>
+                    </a>
+
+                    <ul class="child" style="display: none">
+                        <li>一级分类
+                            <ul class="child_next" style="display: none">
+                                <a href="#">
+                                    <li>三级分类</li>
+                                </a>
+                                <a href="#">
+                                    <li>三级分类</li>
+                                </a>
+                                <a href="#">
+                                    <li>三级分类</li>
+                                </a>
+                            </ul>
+                        </li>
+                        <li>二级分类
+                            <ul class="child_next" style="display: none">
+                                <a href="#">
+                                    <li>三级分类</li>
+                                </a>
+                                <a href="#">
+                                    <li>三级分类</li>
+                                </a>
+                                <a href="#">
+                                    <li>三级分类</li>
+                                </a>
+
+                            </ul>
+                        </li>
+
+                    </ul>
+
+
+                </li>
+                <li>
+                    <a href="javascript:;" class="clearfix">
+                        <span class="iconfont home">&#xe632;</span>
+                        客户管理
+                        <span class="iconfont up">&#xe639;</span>
+                        <span class="iconfont down">&#xe650;</span>
+                    </a>
+                    <ul class="child" style="display: none">
+                        <li>一级分类
+                            <ul class="child_next" style="display: none">
+                                <a href="#">
+                                    <li>三级分类</li>
+                                </a>
+                                <a href="#">
+                                    <li>三级分类</li>
+                                </a>
+                                <a href="#">
+                                    <li>三级分类</li>
+                                </a>
+                            </ul>
+                        </li>
+                        <li>二级分类
+                            <ul class="child_next" style="display: none">
+                                <a href="#">
+                                    <li>呵呵呵呵</li>
+                                </a>
+                                <a href="#">
+                                    <li>咳咳分类</li>
+                                </a>
+                                <a href="#">
+                                    <li>2级分类</li>
+                                </a>
+
+                            </ul>
+                        </li>
+
+                    </ul>
+
+                </li>
+                <li>
+                    <a href="javascript:;" class="clearfix">
+                        <span class="iconfont home">&#xe7ca;</span>
+                        报价管理
+                        <span class="iconfont up">&#xe639;</span>
+                        <span class="iconfont down">&#xe650;</span>
+                    </a>
+                    <ul class="child" style="display: none">
+                        <li>一级分类
+                            <ul class="child_next" style="display: none">
+                                <a href="#">
+                                    <li>三级分类</li>
+                                </a>
+                                <a href="#">
+                                    <li>三级分类</li>
+                                </a>
+                                <a href="#">
+                                    <li>三级分类</li>
+                                </a>
+                            </ul>
+                        </li>
+                        <li>二级分类
+                            <ul class="child_next" style="display: none">
+                                <a href="#">
+                                    <li>三级分类</li>
+                                </a>
+                                <a href="#">
+                                    <li>三级分类</li>
+                                </a>
+                                <a href="#">
+                                    <li>三级分类</li>
+                                </a>
+
+                            </ul>
+                        </li>
+
+                    </ul>
+
+
+                </li>
+                <li>
+                    <a href="javascript:;" class="clearfix">
+                        <span class="iconfont home">&#xe619;</span>
+                        运营管理
+                        <span class="iconfont up">&#xe639;</span>
+                        <span class="iconfont down">&#xe650;</span>
+                    </a>
+
+                    <ul class="child" style="display: none">
+                        <li>一级分类
+                            <ul class="child_next" style="display: none">
+                                <a href="#">
+                                    <li>三级分类</li>
+                                </a>
+                                <a href="#">
+                                    <li>三级分类</li>
+                                </a>
+                                <a href="#">
+                                    <li>三级分类</li>
+                                </a>
+                            </ul>
+                        </li>
+                        <li>二级分类
+                            <ul class="child_next" style="display: none">
+                                <a href="#">
+                                    <li>三级分类</li>
+                                </a>
+                                <a href="#">
+                                    <li>三级分类</li>
+                                </a>
+                                <a href="#">
+                                    <li>三级分类</li>
+                                </a>
+
+                            </ul>
+                        </li>
+
+                    </ul>
+
+
+                </li>
+
+            </ul>
+        </div>
+    </div>
+    <div class="lt_main">
+        <div class="content">
+            <div class="tab_list">
+                <ul class="clearfix">
+                    <li>
+                        <a href="#">操作面板</a>                      
+                    </li>
+                    
+                    <!-- 动态添加li元素 -->
+                </ul>
+            </div>
+            <div class="tab_content">              
+                    <h1>操作面板</h1>
+                    <ul>
+                        <li>111</li>
+                        <li>11</li>
+                        <li>333</li>
+                        <li>3333</li>
+                        <li>444</li>
+                        <li>444</li>
+                        <li>3333</li>
+                        <li>333</li>
+                        <li>444</li>
+                        <li>4040404</li>
+                    </ul>
+                                   
+            </div>
+        </div>
+
+    </div>
+
+    <!-- <script src="./js/lib/require.js" data-main="./js/main"></script> -->
+    <script type="text/javascript" src="./js/lib/require.js"  ></script>
+	<script type="text/javascript" src="./js/main.js" ></script> 
+    <script type="text/javascript" src="./js/login.js" ></script>
+
+</body>
+
+</html>

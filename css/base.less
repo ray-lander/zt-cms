@@ -154,6 +154,10 @@ a {
   &:hover{
     text-decoration: none;
   }
+  &:active{
+    text-decoration: none;
+    
+  }
 }
 ul,
 ol {
@@ -204,14 +208,7 @@ input {
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-/*多行溢出 手机端使用*/
-.txt_cut(@num:2) {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: @num;
-  -webkit-box-orient: vertical;
-}
+
 /* 水平垂直居中的公共类 */
 .center{
   position: absolute;
@@ -245,6 +242,32 @@ input {
 button {
   outline: none;
 }
+a:link {
+  text-decoration:none ;
+   color:white ;
+  }
+a:visited{
+  text-decoration:none ; 
+  color:white;
+}
+a:hover{
+   text-decoration:underline ;
+   color:white;
+  }
+a:active{
+  text-decoration:none ;
+   color:white;
+  } 
 
-
+.star {
+  color: #71bffd;
+  font-size: 15px;
+  font-weight: bold;
+}
+.mt-12 {
+  margin-bottom: 12px;
+}
+.mt-15 {
+  margin-bottom: 15px;
+}
 
